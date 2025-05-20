@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        Cliente client = new Cliente();
+        Cliente cliente = new Cliente("Pandeiro");
+        Conta contaCliente = new ContaCorrente(cliente);
+        contaCliente.depositar(500);
+        contaCliente.imprimirExtrato();
     }
 }
